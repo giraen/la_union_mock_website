@@ -1,0 +1,21 @@
+/* 
+Color 1: #006666
+Color 2: #009999
+Color 3: #ffffff
+Color 4: #ff9966
+Color 5: #f4844e
+Footer Color: #212529 */
+
+:root {
+  --dblue1: #006666;
+  --blue2: #009999;
+  --white3: #ffffff;
+  --lorange4: #ff9966;
+  --orange5: #f4844e;
+  --footer: #212529;
+
+  /* Shades */
+  --dblue1-shade: #061e1f;
+  --dblue1-tint: #516262;
+  --white3-shade: #999999;
+}

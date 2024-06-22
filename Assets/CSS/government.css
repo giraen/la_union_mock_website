@@ -1,0 +1,404 @@
+/* Import Google font - Monserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&family=Work+Sans:wght@600&display=swap");
+
+@font-face {
+  font-family: Poppins;
+  src: url('../Fonts/Poppins-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Body */
+.body {
+    background-color: #006666;
+    height: 100vh;
+    width: 100%;
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  /* DEBUG */
+  /* border: 1px solid red; */
+  background: var(--dblue1-shade);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.logo-box {
+  position: relative;
+  margin: 0.347vw 0.347vw 0.347vw 0.868vw;
+  padding: 0.208vw 0.208vw 0.208vw 0.416vw;
+}
+
+img.logo {
+  width: 8.889vw;
+  height: 8.889vw;
+}
+
+.menu {
+  margin: 0 0.694vw 0 0;
+  padding: 0.694vw;
+  display: block;
+}
+
+ul.header-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul.header-links li {
+  margin: 0 0.694vw 0 0;
+  padding: 0.694vw 1.042vw;
+}
+
+ul.header-links li a {
+  font-size: 1.389vw;
+  text-decoration: none;
+  color: var(--white3);
+  transition: font-size 0.25s ease, font-weight 0.25s ease,
+    text-shadow 0.25s ease;
+}
+
+ul.header-links li:hover a {
+  font-size: 1.528vw;
+  font-weight: 600;
+  text-shadow: 0px 0px 25px var(--dblue1);
+}
+
+i.fas {
+  display: none;
+}
+
+@media screen and (max-width: 428px) {
+  img.logo {
+    width: 23.925vw;
+    height: 23.925vw;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-box {
+    display: flex;
+  }
+
+  i.fas {
+    display: flex;
+    color: var(--white3);
+  }
+
+  i.fas {
+    display: flex;
+    color: var(--white3);
+    width: 100%;
+    font-size: 30px;
+    padding-right: 15px;
+    z-index: 2;
+  }
+
+  ul.header-links {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--dblue1-tint);
+    top: 0vw;
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  ul.header-links li {
+    margin: 65px;
+  }
+
+  ul.header-links li a {
+    font-size: 20px;
+  }
+
+  i:active {
+    filter: invert();
+  }
+
+  i:active + ul.header-links {
+    display: block;
+    max-height: 100%;
+  }
+}
+
+
+/* Section*/
+  .body-content {
+    background-color: #bcb79c;
+  }
+
+  .header-content {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .space {
+    background-color: #bcb79c;
+    padding: 20px;
+  }
+
+  .seperator-first {
+    display: flex;
+    background-color: #033f63;
+    margin-top: 10px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .title-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe7c7;
+    width: auto;
+    margin:10px;
+    border-radius: 10px;
+  } 
+
+  .title-content h1 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    color: black;
+    border-bottom: 5px solid #033f63;
+  }
+
+  .title-content img {
+    width: 350px;
+    height: 350px;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  .img-content {
+    background-color: #999999;
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+    flex: 2;
+    border-radius: 10px;
+  }
+
+  .img-content img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .Meaning {
+    background-color: #7c9885;
+    margin-top: 10px;
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .Meaning p {
+    text-align: justify;
+    text-indent: 50px;
+    font-weight: 600;
+    color: black;
+  }
+
+  @media  screen and (max-width: 425px) {
+
+    .img-content {
+      display: none;
+    }
+
+    .seperator-first {
+      height: 400px;
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    
+    .title-content img {
+      width: 100%;
+      height: 350px;
+    }
+
+  }
+    
+
+
+
+/* Footer */
+/* colors.css */
+/* 
+Color 1: #006666
+Color 2: #009999
+Color 3: #ffffff
+Color 4: #ff9966
+Color 5: #f4844e
+Footer Color: #212529 */
+
+:root {
+    --dblue1: #006666;
+    --blue2: #009999;
+    --white3: #ffffff;
+    --lorange4: #ff9966;
+    --orange5: #f4844e;
+    --footer: #212529;
+  
+    /* Shades */
+    --dblue1-shade: #061e1f;
+    --dblue1-tint: #516262;
+    --white3-shade: #999999;
+  }
+
+/* footer.css */
+footer {
+    font-family: "Work Sans", sans-serif;
+    color: var(--white3);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gov-ft div:nth-child(1) {
+    display: flex;
+  }
+  
+  .arms-box {
+    justify-content: center;
+  }
+  
+  .arms-box img {
+    width: 50%;
+  }
+  
+  .launion-ft {
+    background: var(--footer);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.042vw 0 1.042vw 0;
+  }
+  
+  .launion-ft div > h5 {
+    font-size: 0.799vw;
+    margin: 0 0 5px 0;
+  }
+  
+  .launion-ft div > p {
+    font-size: 0.764vw;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+  }
+  
+  .gov-ft {
+    color: #545454;
+    background: var(--white3);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.042vw 0 1.042vw 0;
+  }
+  
+  .gov-ft div > h5 {
+    font-size: 0.799vw;
+    margin-bottom: 0.278vw;
+  }
+  
+  .gov-ft p {
+    font-size: 0.764vw;
+    line-height: 1.75em;
+    color: #545454;
+  }
+  
+  .gov-ft a {
+    text-decoration: none;
+  }
+  
+  .gov-ft a:hover {
+    text-decoration: underline;
+    text-decoration-color: #545454;
+  }
+  
+  .gov-ft > div {
+    flex: 0.5;
+    /* DEBUG */
+    /* border: 1px red solid; */
+    margin: 0.347vw 1.389vw 0.347vw 5.208vw;
+  }
+  
+  @media screen and (max-width: 428px) {
+    .launion-ft {
+      flex-direction: column;
+      padding: 3.505vw 0 3.505vw 2.336vw;
+    }
+  
+    .left-box {
+      order: 1;
+    }
+  
+    .right-box {
+      order: 2;
+    }
+  
+    .launion-ft div > h5 {
+      font-size: 2.523vw;
+      margin: 0 0 5px 0;
+    }
+  
+    .launion-ft div > p {
+      font-size: 2.336vw;
+      line-height: 1.5em;
+      letter-spacing: 0.08em;
+    }
+  
+    .gov-ft {
+      flex-direction: column;
+      padding: 2.336vw 0 3.505vw 0.467vw;
+      margin: 0 0 0 2px;
+    }
+  
+    .gov-ft > div {
+      flex: 0.5;
+      margin: 0.347vw 1.389vw 0.347vw 2.336vw;
+    }
+  
+    .gov-ft div > h5 {
+      font-size: 2.523vw;
+      margin-bottom: 0.278vw;
+    }
+  
+    .gov-ft p {
+      font-size: 2.336vw;
+      line-height: 1.75em;
+      color: #545454;
+    }
+  
+    .arms-box img {
+      width: 30%;
+      margin: 0 0 2.336vw 0;
+    }
+  
+    .arms-box {
+      justify-content: flex-start;
+    }
+  
+    .gov-ft > div:not(.arms-box) {
+      margin: 1.168vw;
+    }
+  }

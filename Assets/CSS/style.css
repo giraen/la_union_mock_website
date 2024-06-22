@@ -1,0 +1,769 @@
+/* Import Google font - Monserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&family=Work+Sans:wght@600&display=swap");
+
+
+@font-face {
+    font-family: Launion;
+    src: url('../Fonts/Launion.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Background-Image */
+
+.main-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.thunderbird-asia.com/wp-content/uploads/2019/07/thunderbird-resort-in-la-union.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* HEADER */
+nav {
+    display: flex;
+    /* DEBUG */
+    /* border: 1px solid red; */
+    background: transparent;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .logo-box {
+    position: relative;
+    margin: 0.347vw 0.347vw 0.347vw 0.868vw;
+    padding: 0.208vw 0.208vw 0.208vw 0.416vw;
+  }
+  
+  img.logo {
+    width: 8.889vw;
+    height: 8.889vw;
+  }
+  
+  .menu {
+    margin: 0 0.694vw 0 0;
+    padding: 0.694vw;
+    display: block;
+  }
+  
+  ul.header-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  ul.header-links li {
+    margin: 0 0.694vw 0 0;
+    padding: 0.694vw 1.042vw;
+  }
+  
+  ul.header-links li a {
+    font-size: 1.389vw;
+    text-decoration: none;
+    color: var(--white3);
+    transition: font-size 0.25s ease, font-weight 0.25s ease,
+      text-shadow 0.25s ease;
+  }
+  
+  ul.header-links li:hover a {
+    font-size: 1.528vw;
+    font-weight: 600;
+    text-shadow: 0px 0px 25px var(--dblue1);
+  }
+  
+  i.fas {
+    display: none;
+  }
+  
+  @media screen and (max-width: 428px) {
+    img.logo {
+      width: 23.925vw;
+      height: 23.925vw;
+    }
+  
+    .menu {
+      display: flex;
+    }
+  
+    .menu-box {
+      display: flex;
+    }
+  
+    i.fas {
+      display: flex;
+      color: var(--white3);
+    }
+  
+    i.fas {
+      display: flex;
+      color: var(--white3);
+      width: 100%;
+      font-size: 30px;
+      padding-right: 15px;
+      z-index: 2;
+    }
+  
+    ul.header-links {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--dblue1-tint);
+      top: 0vw;
+      left: 0;
+      text-align: center;
+      flex-direction: column;
+      padding: 10px;
+      z-index: 1;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    ul.header-links li {
+      margin: 65px;
+    }
+  
+    ul.header-links li a {
+      font-size: 20px;
+    }
+  
+    i:active {
+      filter: invert();
+    }
+  
+    i:active + ul.header-links {
+      display: block;
+      max-height: 100%;
+    }
+  }
+  
+
+
+/* Hero Section */
+
+
+.Tagahiwa{
+    display: flex; 
+    margin-top: 5%;
+    width: 100%;
+}
+
+.Text-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.Text-left .h1 {
+    font-size: 75px;
+    color: #fff;
+    font-weight: 100;
+    font-family: "Launion", sans-serif;
+    text-align: center;
+}
+
+.Text-left p{
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.clickable {
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(111, 113, 124, 0.3);
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 100;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .clickable:hover {
+    background-color: #050505;
+    color: white;
+  }
+
+  .clickable a {
+    color: white;
+  }
+
+/* Carousel */
+
+.wrapper {
+    margin-top: 5%;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+.wrapper i {
+    top: -5%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+    position: absolute;
+    left: 40%;
+}
+.wrapper i:last-child{
+    position: absolute;
+    right: 40%;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.carousel .card .img {
+    background: #8B53FF;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+.card .img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+.carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*Reason For Bakit Ka Pinili */
+
+.Middle-body {
+    position: relative;
+    background-color: #08141c;
+    height: 100%;
+    padding-top: 50px;
+    font-family: "Monsterrat", sans-serif;
+}
+
+.Middle-body h1 {
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Launion";
+}
+
+.Icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+    padding-bottom: 50px;
+    
+}
+
+.circle {
+    color: #dbd0ca;  
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TRY HOVERING */
+.circle p {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d4c5c;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.circle:hover p {
+    opacity: 0.8;
+    bottom: 0;
+}
+/* END OF TRY HOVERING */
+
+.circle:nth-child(1) {
+    background-image: linear-gradient(180deg, rgba(127, 127, 213, 1), rgba(145, 234, 228, 1));
+}
+
+.circle:nth-child(2){
+    background-image: linear-gradient(180deg, rgba(135, 206, 235, 0.9), rgba(0, 255, 0, 1));
+
+}
+
+.circle:nth-child(3){
+    background-image: linear-gradient(180deg, rgba(249, 187, 157, 1), rgba(133, 170, 170, 1));
+}
+
+.circle:nth-child(4){
+    background-image: linear-gradient(180deg, rgba(255, 242, 240, 1), rgba(238, 182, 9, 1));
+}
+
+.circle:nth-child(5){
+    background-image: linear-gradient(90deg, rgba(255, 255, 0, 1), rgba(255, 0, 0, 1));
+}
+
+.circle:nth-child(6){
+    background-image: linear-gradient(180deg, rgba(243, 159, 97, 1), rgba(231, 60, 53, 1));
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Footer */
+/* colors.css */
+/* 
+Color 1: #006666
+Color 2: #009999
+Color 3: #ffffff
+Color 4: #ff9966
+Color 5: #f4844e
+Footer Color: #212529 */
+
+:root {
+    --dblue1: #006666;
+    --blue2: #009999;
+    --white3: #ffffff;
+    --lorange4: #ff9966;
+    --orange5: #f4844e;
+    --footer: #212529;
+  
+    /* Shades */
+    --dblue1-shade: #061e1f;
+    --dblue1-tint: #516262;
+    --white3-shade: #999999;
+  }
+
+/* footer.css */
+footer {
+    font-family: "Work Sans", sans-serif;
+    color: var(--white3);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gov-ft div:nth-child(1) {
+    display: flex;
+  }
+  
+  .arms-box {
+    justify-content: center;
+  }
+  
+  .arms-box img {
+    width: 50%;
+  }
+  
+  .launion-ft {
+    background: var(--footer);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.042vw 0 1.042vw 0;
+  }
+  
+  .launion-ft div > h5 {
+    font-size: 0.799vw;
+    margin: 0 0 5px 0;
+  }
+  
+  .launion-ft div > p {
+    font-size: 0.764vw;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+  }
+  
+  .gov-ft {
+    color: #545454;
+    background: var(--white3);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.042vw 0 1.042vw 0;
+  }
+  
+  .gov-ft div > h5 {
+    font-size: 0.799vw;
+    margin-bottom: 0.278vw;
+  }
+  
+  .gov-ft p {
+    font-size: 0.764vw;
+    line-height: 1.75em;
+    color: #545454;
+  }
+  
+  .gov-ft a {
+    text-decoration: none;
+  }
+  
+  .gov-ft a:hover {
+    text-decoration: underline;
+    text-decoration-color: #545454;
+  }
+  
+  .gov-ft > div {
+    flex: 0.5;
+    /* DEBUG */
+    /* border: 1px red solid; */
+    margin: 0.347vw 1.389vw 0.347vw 5.208vw;
+  }
+  
+  @media screen and (max-width: 428px) {
+    .launion-ft {
+      flex-direction: column;
+      padding: 3.505vw 0 3.505vw 2.336vw;
+    }
+  
+    .left-box {
+      order: 1;
+    }
+  
+    .right-box {
+      order: 2;
+    }
+  
+    .launion-ft div > h5 {
+      font-size: 2.523vw;
+      margin: 0 0 5px 0;
+    }
+  
+    .launion-ft div > p {
+      font-size: 2.336vw;
+      line-height: 1.5em;
+      letter-spacing: 0.08em;
+    }
+  
+    .gov-ft {
+      flex-direction: column;
+      padding: 2.336vw 0 3.505vw 0.467vw;
+      margin: 0 0 0 2px;
+    }
+  
+    .gov-ft > div {
+      flex: 0.5;
+      margin: 0.347vw 1.389vw 0.347vw 2.336vw;
+    }
+  
+    .gov-ft div > h5 {
+      font-size: 2.523vw;
+      margin-bottom: 0.278vw;
+    }
+  
+    .gov-ft p {
+      font-size: 2.336vw;
+      line-height: 1.75em;
+      color: #545454;
+    }
+  
+    .arms-box img {
+      width: 30%;
+      margin: 0 0 2.336vw 0;
+    }
+  
+    .arms-box {
+      justify-content: flex-start;
+    }
+  
+    .gov-ft > div:not(.arms-box) {
+      margin: 1.168vw;
+    }
+  }
+
+  /* My footer */
+
+.footer {
+    background-color: #006666;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    height: 60px;
+}
+
+.position {
+    position: relative;
+    top: 20px;
+}
+
+/* Cellphone */
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    
+    .main-bg{
+        height: 100%;
+        width: 100%;
+    }
+
+    .inner-logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-right nav ul li{
+        display: none;
+    }
+
+    .Tagahiwa{
+        flex-wrap: wrap;
+        height: 1000px; 
+    }
+
+    .Text-left{
+        margin: 0 50px;
+    }
+
+    .Text-left .h1{
+        font-size: 35px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .wrapper i {
+        display: none;
+    }
+
+    .Middle-body h1 {
+        font-size: 30px;
+    }
+
+    .center-middle {
+        font-size: 12px;
+        text-align: justify;
+        padding: 20px;
+    }
+    
+    .space {
+        margin: 0 auto;
+    }
+    
+    .Center-foot {
+        text-align: center;
+    }
+
+    /* Header*/
+
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color:transparent;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: 98;
+    }
+    header .header-left nav.active {
+        top: 100px;
+        height: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+
+    .secret-button {
+        display: block;
+    }
+
+    .secret-2-button {
+        display: none;
+    }
+
+    .hamburger {
+        z-index: 99;
+    }
+
+    .inner-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    nav ul li a {
+        color: #cfd9e0;
+        font-size: 32px;
+        padding: 30px 10px;
+        border-top: 2px solid #ffffff;
+        transition: 0.2s;
+    }
+
+}
+
+/* Tablet*/
+@media screen and (max-width: 768px) {
+    /* Background-Image */
+
+    .main-bg{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header-right nav ul li{
+        display: none;
+    }
+    
+    /* Hero Section */
+
+    .Tagahiwa{
+        flex-wrap: wrap;
+    }
+    
+    .Text-left {
+        width: 100%;
+    }
+
+/* Carousel */
+
+    .wrapper {
+        width: 100%;
+        height: 75vh;
+    }
+
+    .wrapper i {
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+        line-height: 50px;
+        transform: translateY(0);
+    }
+
+    .wrapper i:first-child{
+        top: 30%;
+        left: 0%;
+    }
+    .wrapper i:last-child{
+        position: absolute;
+        top: 30%;
+        right: 0%;
+    }
+
+    .wrapper .carousel{
+        gap: 10px;
+    }
+
+    .carousel .card {
+        border-radius: 10%;
+    }
+
+    .carousel .card .img {
+        background: transparent;
+    }
+
+    .card .img img {
+        width: 200px;
+    }
+
+    header .header-left nav.active {
+        height: 93%;
+    }
+}
